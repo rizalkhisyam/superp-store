@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: inter;
+  src: url("../assets/fonts/Inter-Regular.ttf");
+}
+
+.body {
+  font-family: inter;
+}
+
+.navbar {
+  background-color: #d0d6dd;
+}
+
+.sidebar {
+  border-right: 1px solid rgba(228, 228, 228, 0.9);
+}
+
+.dropdown {
+  border: 1px solid rgba(228, 228, 228, 0.9);
+  width: 10.5rem;
+}
+
+.dropdown-pagination {
+  border: 1px solid rgba(228, 228, 228, 0.9);
+  width: 5rem;
+}
+
+.search {
+  border: 1px solid rgba(228, 228, 228, 0.9);
+}
+
+.image-cart {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.add-product {
+  border: 1px solid rgba(228, 228, 228, 0.9);
+  width: 107px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.pagination {
+  width: 35px;
+  height: 28px;
+}
+
+.button-cta {
+  width: 80px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.button-cta.submit {
+  background-color: #f7601a;
+  border-radius: 4px;
+  color: white;
+}
