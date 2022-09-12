@@ -11,7 +11,7 @@
   <body>
     <section class="">
       <nav class="navbar bg-navbar px-3 sm:px-5 py-2.5">
-        <div class="flex justify-between items-center mx-auto">
+        <div class="navbar-nav flex justify-between items-center mx-auto">
           <a href="#" class="flex items-center">
             <img
               src="assets/logo/logo.svg"
@@ -29,21 +29,22 @@
     </section>
     <section>
       <div class="flex">
+        <!-- Sidebar -->
         <aside class="h-full" aria-label="Sidebar">
           <div class="sidebar w-48 overflow-y-auto py-4 px-3 min-h-screen">
             <ul class="space-y-2">
               <li>
-                <a href="#" class="flex items-center p-2 text-base font-normal">
+                <div href="#" class="flex items-center p-2 text-base font-normal">
                   <span
-                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:font-semibold hover:text-primary"
+                    class="flex-1 ml-3 text-xs text-side whitespace-nowrap tracking-widest"
                     >SUPERP</span
                   >
-                </a>
+                </div>
               </li>
               <li>
                 <a href="#" class="flex items-center p-2 text-base font-normal">
                   <span
-                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:font-semibold hover:text-primary"
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover active:font-semibold active:text-primary"
                     >Catalogue</span
                   >
                 </a>
@@ -51,7 +52,7 @@
               <li>
                 <a href="#" class="flex items-center p-2 text-base font-normal">
                   <span
-                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:font-semibold hover:text-primary"
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover active:font-semibold active:text-primary"
                     >Settings</span
                   >
                 </a>
@@ -60,7 +61,7 @@
               <li>
                 <a href="#" class="flex items-center p-2 text-base font-normal">
                   <span
-                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:font-semibold hover:text-primary"
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover active:font-semibold active:text-primary"
                     >View your store</span
                   >
                 </a>
@@ -68,8 +69,13 @@
             </ul>
           </div>
         </aside>
+        <!-- end sidebar -->
+
+        <!-- main content -->
         <div class="content w-full">
           <div class="py-4 px-6 p-2">
+
+            <!-- Header -->
             <div class="">
               <h2 class="font-semibold text-primary text-xl">
                 Manage catalogue
@@ -78,8 +84,8 @@
 
             <div class="flex w-full justify-between pt-10 mb-10">
               <button
-                id="dropdownBgHoverButton"
-                data-dropdown-toggle="dropdownBgHover"
+                id="dropdownDefault"
+                data-dropdown-toggle="dropdown"
                 class="dropdown text-gray-500 bg-white focus:ring-1 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center"
                 type="button"
               >
@@ -102,6 +108,30 @@
                   </svg>
                 </div>
               </button>
+
+              <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
+                <ul class="py-1 text-sm text-primary" aria-labelledby="dropdownDefault">
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kode produk</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nama produk</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kategori</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Stock</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unit</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Harga jual</a>
+                  </li>
+                </ul>
+            </div>
+
               <div class="relative">
                 <div
                   class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
@@ -117,7 +147,9 @@
                 />
               </div>
             </div>
+            <!-- end header -->
 
+            <!-- Table -->
             <div class="overflow-x-auto relative">
               <table
                 class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
@@ -130,7 +162,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -147,7 +179,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -164,7 +196,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -181,7 +213,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -198,7 +230,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -215,7 +247,7 @@
                         <a href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="ml-1 w-3 h-3"
+                            class="ml-1 w-3 h-3 fill-icon hover:fill-slate-400"
                             aria-hidden="true"
                             fill="currentColor"
                             viewBox="0 0 320 512"
@@ -232,9 +264,9 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0317</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top align-top">
+                    <td class="py-3.5 px-6">CP-0317</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/image_1.png"
@@ -255,21 +287,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">8</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 45.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">8</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp45.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0318</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0318</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/expresso.png"
@@ -285,21 +319,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">120</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 45.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">120</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp45.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0319</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0319</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img src="assets/images/dutch.png" class="image-cart" />
                         <div class="grid px-2">
@@ -317,21 +353,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Powders</td>
-                    <td class="py-4 px-6">0</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 35.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Powders</td>
+                    <td class="py-3.5 px-6">0</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp35.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0320</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0320</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/central.png"
@@ -345,21 +383,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Promo</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Promo</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0321</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0321</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/breakfast.png"
@@ -375,21 +415,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0322</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0322</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/colombia.png"
@@ -406,21 +448,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0323</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0323</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img src="assets/images/creme.png" class="image-cart" />
                         <div class="grid px-2">
@@ -431,21 +475,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0324</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0324</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/hazelnut.png"
@@ -459,21 +505,23 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b text-primary">
-                    <td class="py-4 px-6">CP-0325</td>
-                    <td class="py-4 px-6">
+                  <tr class="bg-white border-b text-primary align-top">
+                    <td class="py-3.5 px-6">CP-0325</td>
+                    <td class="py-3.5 px-6">
                       <div class="flex">
                         <img
                           src="assets/images/french.png"
@@ -487,16 +535,18 @@
                         </div>
                       </div>
                     </td>
-                    <td class="py-4 px-6">Coffee</td>
-                    <td class="py-4 px-6">100</td>
-                    <td class="py-4 px-6">Pcs</td>
-                    <td class="py-4 px-6">Rp. 80.000</td>
-                    <td class="py-4 px-6">
-                      <button class="add-product">
-                        <div class="flex justify-center items-center">
-                          <span>Add product</span>
-                        </div>
-                      </button>
+                    <td class="py-3.5 px-6">Coffee</td>
+                    <td class="py-3.5 px-6">100</td>
+                    <td class="py-3.5 px-6">Pcs</td>
+                    <td class="py-3.5 px-6">Rp80.000</td>
+                    <td class="py-3.5 px-6">
+                      <div class="w-full flex justify-end">
+                        <button class="add-product">
+                          <div class="flex justify-center items-center">
+                            <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -586,6 +636,9 @@
                 </div>
               </div>
             </div>
+
+            <!-- end table content -->
+
             <div class="flex w-full justify-end pt-10">
               <div class="flex">
                 <div>
@@ -602,7 +655,10 @@
             </div>
           </div>
         </div>
+        <!-- end main content -->
+
       </div>
     </section>
+    <script src="src/js/dopdown-lib.js"></script>
   </body>
 </html>

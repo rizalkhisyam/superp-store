@@ -3,16 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: inter;
-  src: url("../assets/fonts/Inter-Regular.ttf");
+  font-family: interRegular;
+  src: url(../assets/fonts/Inter-Regular.ttf);
 }
 
-.body {
-  font-family: inter;
+html * {
+  font-family: interRegular, sans-serif;
 }
+
 
 .navbar {
-  background-color: #d0d6dd;
+  background-color: #F2F4F7;
+  border-bottom: 1px solid rgba(228, 228, 228, 0.9);
+}
+
+.navbar-nav{
+  height: 72px;
 }
 
 .sidebar {
