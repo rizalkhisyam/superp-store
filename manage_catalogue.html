@@ -50,7 +50,10 @@
                 </a>
               </li>
               <li>
-                <a href="/setting.html" class="flex items-center p-2 text-base font-normal">
+                <a
+                  href="setting.html"
+                  class="flex items-center p-2 text-base font-normal"
+                >
                   <span
                     class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
                     >Settings</span
@@ -59,7 +62,10 @@
               </li>
               <hr />
               <li>
-                <a href="/index.html" class="flex items-center p-2 text-base font-normal">
+                <a
+                  href="index.html"
+                  class="flex items-center p-2 text-base font-normal"
+                >
                   <span
                     class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
                     >View your store</span
@@ -74,7 +80,6 @@
         <!-- main content -->
         <div class="content w-full">
           <div class="py-4 px-6 p-2">
-
             <!-- Header -->
             <div class="">
               <h2 class="font-semibold text-primary text-xl">
@@ -109,28 +114,58 @@
                 </div>
               </button>
 
-              <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
-                <ul class="py-1 text-sm text-primary" aria-labelledby="dropdownDefault">
+              <div
+                id="dropdown"
+                class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+              >
+                <ul
+                  class="py-1 text-sm text-primary"
+                  aria-labelledby="dropdownDefault"
+                >
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kode produk</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Kode produk</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nama produk</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Nama produk</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kategori</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Kategori</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Stock</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Stock</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unit</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Unit</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Harga jual</a>
+                    <a
+                      href="#"
+                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Harga jual</a
+                    >
                   </li>
                 </ul>
-            </div>
+              </div>
 
               <div class="relative">
                 <div
@@ -264,7 +299,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-white border-b text-primary align-top align-top">
+                  <tr class="bg-white border-b text-primary align-top">
                     <td class="py-3.5 px-6">CP-0317</td>
                     <td class="py-3.5 px-6">
                       <div class="flex">
@@ -293,9 +328,21 @@
                     <td class="py-3.5 px-6">Rp45.000</td>
                     <td class="py-3.5 px-6">
                       <div class="w-full flex justify-end">
-                        <button class="add-product">
+                        <button
+                          class="add-product button-add"
+                          type="submit"
+                          id="add"
+                          value="true"
+                        >
                           <div class="flex justify-center items-center">
                             <span>Add product</span>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="w-full flex justify-end">
+                        <button class="remove hidden">
+                          <div class="flex justify-center items-center">
+                            <span class="text-error">Remove</span>
                           </div>
                         </button>
                       </div>
@@ -656,9 +703,20 @@
           </div>
         </div>
         <!-- end main content -->
-
       </div>
     </section>
+    <script src="src/js/jquery.js"></script>
     <script src="src/js/dopdown-lib.js"></script>
+    <script>
+      $("#add").on("click", function () {
+        $("button.add-product.button-add").addClass("hidden");
+        $("button.remove").removeClass("hidden");
+      });
+
+      $("button.remove").on("click", function () {
+        $("button.add-product.button-add").removeClass("hidden");
+        $("button.remove").addClass("hidden");
+      });
+    </script>
   </body>
 </html>
