@@ -14,11 +14,12 @@ module.exports = {
         icon: "#D0D6DD",
         orange: "#f7601a",
         graySecondary: "#626B79",
-        input: "#D0D6DD"
+        input: "#D0D6DD",
+        domain: "#F2F4F7",
       },
       margin: {
-        38: "38px"
-      }
+        38: "38px",
+      },
     },
   },
   plugins: [],

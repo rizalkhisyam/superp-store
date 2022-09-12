@@ -11,13 +11,12 @@ html * {
   font-family: interRegular, sans-serif;
 }
 
-
 .navbar {
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
   border-bottom: 1px solid rgba(228, 228, 228, 0.9);
 }
 
-.navbar-nav{
+.navbar-nav {
   height: 72px;
 }
 
@@ -63,7 +62,7 @@ html * {
   border-radius: 4px;
 }
 
-.button-cta-catalog{
+.button-cta-catalog {
   width: 158px;
   height: 36px;
   background-color: #f7601a;
@@ -71,7 +70,7 @@ html * {
   color: white;
 }
 
-.button-cta-save{
+.button-cta-save {
   width: 158px;
   height: 36px;
   background-color: #f7601a;
@@ -85,25 +84,24 @@ html * {
   color: white;
 }
 
-.card-menu{
+.card-menu {
   width: 240px;
   height: 244px;
-  border: 1px solid #D0D6DD;
+  border: 1px solid #d0d6dd;
   border-radius: 6px;
-
 }
 
-.card-menu:hover{
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border: 1px solid #4B61DD;
-
+.card-menu:hover {
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #4b61dd;
 }
 
-.label-setting{
+.label-setting {
   width: 176px;
 }
 
-.active{
+.active {
   font-weight: 600;
   color: #232933;
 }
@@ -114,7 +112,17 @@ html * {
   border-radius: 6px;
 }
 
-.textarea{
+.input-domain {
+  width: 260px;
+  border-radius: 6px 0 0 6px;
+}
+
+.input-domain-label {
+  width: 92px;
+  border-radius: 0 6px 6px 0;
+}
+
+.textarea {
   width: 352px;
   border-radius: 6px;
 }
