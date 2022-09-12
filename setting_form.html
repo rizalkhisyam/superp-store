@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superp Store</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="assets/logo/logo.svg" />
+  </head>
+  <body>
+    <section class="">
+      <nav class="navbar bg-navbar px-3 sm:px-5 py-2.5">
+        <div class="navbar-nav flex justify-between items-center mx-auto">
+          <a href="#" class="flex items-center">
+            <img
+              src="assets/logo/logo.svg"
+              class="mr-3 h-6 sm:h-9"
+              alt="superp-logo"
+            />
+            <h1
+              class="self-center text-2xl text-primary font-semibold whitespace-nowrap"
+            >
+              Superp Store
+            </h1>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="flex">
+        <aside class="h-full" aria-label="Sidebar">
+          <div class="sidebar w-48 overflow-y-auto py-4 px-3 min-h-screen">
+            <ul class="space-y-2">
+              <li>
+                <div href="#" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-xs text-side whitespace-nowrap tracking-widest"
+                    >SUPERP</span
+                  >
+                </div>
+              </li>
+              <li>
+                <a href="/catalogue.html" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
+                    >Catalogue</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest active:font-semibold active:text-primary active"
+                    >Settings</span
+                  >
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a href="/index.html" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
+                    >View your store</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="content w-full">
+          <div class="py-4 px-6 p-2">
+            <div class="flex w-full justify-between">
+              <div>
+                <h2 class="font-semibold text-primary text-xl">
+                  Settings
+                </h2>
+              </div>
+            </div>
+
+            <div class="flex w-full my-12 justify-between">
+              <div class="flex-col">
+                <div class="flex">
+                  <div class="label-setting ">
+                    <label for="store_name" class="text-sm text-graySecondary">Store name</label>
+                  </div>
+                  <div class="ml-6">
+                    <input class="input-form appearance-none border w-full py-2 px-3 text-sm text-primary leading-tight focus:outline-none focus:shadow-outline border-input" id="username" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="flex mt-4">
+                  <div class="label-setting ">
+                    <label for="store_name" class="text-sm text-graySecondary">Store description</label>
+                  </div>
+                  <div class="ml-6">
+                    <textarea id="description" rows="4" class="textarea block p-2.5 w-full appearance-none text-sm text-gray-900 bg-white border border-input focus:outline-none" placeholder=""></textarea>
+                  </div>
+                </div>
+                <div class="flex mt-4">
+                  <div class="label-setting ">
+                    <label for="store_name" class="text-sm text-graySecondary">WhatsApp no.</label>
+                  </div>
+                  <div class="ml-6">
+                    <input class="input-form appearance-none border w-full py-2 px-3 text-sm text-primary leading-tight focus:outline-none focus:shadow-outline border-input" id="username" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="flex mt-4">
+                  <div class="flex label-setting items-center">
+                    <label for="store_name" class="text-sm text-graySecondary">Subdomain</label>
+                    <img src="assets/images/Info.svg" alt="info" class="ml-2">
+                  </div>
+                  <div class="flex ml-6">
+                    <input type="text" id="website-admin" class="appearance-none border w-full py-2 px-3 text-sm text-primary leading-tight focus:outline-none focus:shadow-outline border-input" placeholder="elonmusk">
+                    <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                        superp.app
+                    </span>
+                </div>
+                </div>
+                <div class="flex items-center justify-end mt-6">
+                    <div>
+                        <button onclick="window.location.href='setting.html'" type="submit" class="text-sm text-graySecondary mr-6">Cancel</button>
+                    </div>
+                    <div>
+                        <button onclick="window.location.href='setting.html'" type="button" class="button-cta-save focus:outline-none text-white bg-orange hover:bg-red-800 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm dark:bg-orange dark:hover:bg-red-700 dark:focus:ring-red-900">Save changes</button>
+
+                    </div>
+                </div>
+              </div>
+              
+              <div>
+                <img src="assets/images/Preview.png" alt="preview">
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

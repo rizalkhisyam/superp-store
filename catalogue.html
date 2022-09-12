@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superp Store</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="assets/logo/logo.svg" />
+  </head>
+  <body>
+    <section class="">
+      <nav class="navbar bg-navbar px-3 sm:px-5 py-2.5">
+        <div class="navbar-nav flex justify-between items-center mx-auto">
+          <a href="#" class="flex items-center">
+            <img
+              src="assets/logo/logo.svg"
+              class="mr-3 h-6 sm:h-9"
+              alt="superp-logo"
+            />
+            <h1
+              class="self-center text-2xl text-primary font-semibold whitespace-nowrap"
+            >
+              Superp Store
+            </h1>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="flex">
+        <aside class="h-full" aria-label="Sidebar">
+          <div class="sidebar w-48 overflow-y-auto py-4 px-3 min-h-screen">
+            <ul class="space-y-2">
+              <li>
+                <div class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-xs text-side whitespace-nowrap tracking-widest"
+                    >SUPERP</span
+                  >
+                </div>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest active hover:text-primary"
+                    >Catalogue</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="/setting.html" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
+                    >Settings</span
+                  >
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a href="/index.html" class="flex items-center p-2 text-base font-normal">
+                  <span
+                    class="flex-1 ml-3 text-sm text-side whitespace-nowrap tracking-widest hover:text-hover"
+                    >View your store</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="content w-full">
+          <div class="py-4 px-6 p-2">
+            <div class="flex w-full justify-between">
+              <div>
+                <h2 class="font-semibold text-primary text-xl">
+                  Catalogue
+                </h2>
+              </div>
+              <div>
+                <button onclick="window.location.href='manage_catalogue.html'" type="button" class="button-cta-catalog focus:outline-none text-white bg-orange hover:bg-red-800 focus:ring-1 focus:ring-red-300 font-medium rounded-lg text-sm dark:bg-orange dark:hover:bg-red-700 dark:focus:ring-red-900">Manage catalogue</button>
+              </div>
+            </div>
+
+            <div class="flex w-full justify-between pt-10 mb-10">
+              <button
+                id="dropdownDefault"
+                data-dropdown-toggle="dropdown"
+                class="dropdown text-gray-500 bg-white focus:ring-1 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center"
+                type="button"
+              >
+                <div class="flex w-full justify-between items-center">
+                  <span>Filter</span>
+                  <svg
+                    class="w-4 h-4"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+
+              <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
+                <ul class="py-1 text-sm text-primary" aria-labelledby="dropdownDefault">
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kode produk</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nama produk</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kategori</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Stock</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Unit</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Harga jual</a>
+                  </li>
+                </ul>
+            </div>
+              <div class="relative">
+                <div
+                  class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                >
+                  <img src="assets/images/search.svg" alt="" />
+                </div>
+                <input
+                  type="text"
+                  id="simple-search"
+                  class="search text-sm rounded-lg block w-full pl-10 p-2.5 focus:ring-1 focus:outline-none focus:ring-blue-300"
+                  placeholder="Cari produk"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="overflow-x-auto relative">
+              <div class="flex flex-col justify-center items-center">
+                  <img class="image-icon" src="assets/images/folder.png" alt="icon_empty">
+                  <span class="text-base font-semibold my-4">No products in your catalogue</span>
+                  <span class="text-sm text-graySecondary my-1">Ready for sale products will be showed here</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="src/js/dopdown-lib.js"></script>
+  </body>
+</html>

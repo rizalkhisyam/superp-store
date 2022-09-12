@@ -11,8 +11,14 @@ module.exports = {
         error: "#DB8000",
         empty: "#FDECEE",
         hover: "#F7601A",
-        icon: "#D0D6DD"
+        icon: "#D0D6DD",
+        orange: "#f7601a",
+        graySecondary: "#626B79",
+        input: "#D0D6DD"
       },
+      margin: {
+        38: "38px"
+      }
     },
   },
   plugins: [],

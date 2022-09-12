@@ -63,8 +63,58 @@ html * {
   border-radius: 4px;
 }
 
+.button-cta-catalog{
+  width: 158px;
+  height: 36px;
+  background-color: #f7601a;
+  border-radius: 4px;
+  color: white;
+}
+
+.button-cta-save{
+  width: 158px;
+  height: 36px;
+  background-color: #f7601a;
+  border-radius: 6px;
+  color: white;
+}
+
 .button-cta.submit {
   background-color: #f7601a;
   border-radius: 4px;
   color: white;
+}
+
+.card-menu{
+  width: 240px;
+  height: 244px;
+  border: 1px solid #D0D6DD;
+  border-radius: 6px;
+
+}
+
+.card-menu:hover{
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #4B61DD;
+
+}
+
+.label-setting{
+  width: 176px;
+}
+
+.active{
+  font-weight: 600;
+  color: #232933;
+}
+
+.input-form {
+  width: 352px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.textarea{
+  width: 352px;
+  border-radius: 6px;
 }
